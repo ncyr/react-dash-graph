@@ -7,8 +7,7 @@ var json_data = false;
 //var graph_data = false;
 class Chart extends Component {
     state = {
-        data: [],
-        time: ""
+        data: []
     };
 
     constructor(request) {
@@ -63,11 +62,10 @@ class Chart extends Component {
                     );
                 }
             });
-
+            //do something with the data each time we get it, like update state
             self.setState({
                 data: vic_format
             });
-            //do something with the data each time we get it, like update state
         }, 1000);
     };
     render() {
