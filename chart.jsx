@@ -1,10 +1,3 @@
-//Chart will bring ALL chart data to be presented all in one json per request for a given host
-//this way we wont have one request for each chart type and they will update all togther.
-//Reqs:
-//1. API KEY
-//2. Host ID
-//3.
-
 import React, { Component } from "react";
 import { VictoryChart, VictoryArea } from "victory";
 
